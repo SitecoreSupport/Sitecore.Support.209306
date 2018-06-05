@@ -9,7 +9,7 @@
     [SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling")]
     public void Configure(IServiceCollection serviceCollection)
     {
-      serviceCollection.AddSingleton<ApplicationUserResolver, Sitecore.Support.Owin.Authentication.Services.DefaultApplicationUserResolver>();
+      serviceCollection.AddSingleton<Sitecore.Owin.Authentication.Services.ApplicationUserResolver, Sitecore.Support.Owin.Authentication.Services.DefaultApplicationUserResolver>();
     }
   }
 }
